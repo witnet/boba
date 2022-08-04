@@ -244,10 +244,6 @@ function Home() {
     trackPageView(pageDisplay)
   }, [pageDisplay])
 
-
-  console.log("Home - account enabled:", accountEnabled, "layer:", layer, "Base enabled:", baseEnabled)
-  console.log(pageDisplay);
-
   return (
     <>
       {!!depositModalState && <DepositModal  open={depositModalState}  token={token} fast={fast} />}

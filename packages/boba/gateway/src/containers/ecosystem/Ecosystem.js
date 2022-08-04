@@ -8,7 +8,6 @@ import React, { useEffect, useState } from 'react'
 import * as S from './Ecosystem.styles'
 import { loadProjectByCategory } from './project.list'
 
-import Tooltip from 'components/tooltip/Tooltip'
 import Button from 'components/button/Button'
 
 const PROJECT_CAT = [ 'defi', 'gamefi', 'nft', 'bridge', 'wallet', 'tool', 'token' ];
@@ -66,9 +65,7 @@ function ECOSYSTEM() {
               <S.ProjectContent
               >
                 <Typography alignSelf="center" variant="h4">{project.title}</Typography>
-                <Tooltip title={project.description}>
-                  <S.ProjectDescription variant='body2'> {project.description}</S.ProjectDescription>
-                </Tooltip>
+                <S.ProjectDescription variant='body2'> {project.description}</S.ProjectDescription>
               </S.ProjectContent>
               <S.DividerLine />
               <S.TileFooter
