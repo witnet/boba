@@ -48,7 +48,7 @@ export const menuItems = [
     url: "/dao"
   },
   {
-    key: 'VOTE',
+    key: 'Vote',
     icon: "VoteIcon",
     title: "Vote",
     url: "/vote"

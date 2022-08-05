@@ -9,7 +9,8 @@ class GraphQLService {
     if(process.env.REACT_APP_CHAIN === 'mainnet') {
       return `https://api.thegraph.com/subgraphs/name/bobanetwork/boba-l2-subgraph`
     } else if (process.env.REACT_APP_CHAIN === 'rinkeby') {
-      return `https://graph.rinkeby.boba.network/subgraphs/name/boba/Bridges`
+      // return `https://graph.rinkeby.boba.network/subgraphs/name/boba/Bridges`
+      return `https://graph.rinkeby.boba.network:8000/subgraphs/name/boba/Bridges`
     } else {
       return ''
     }
@@ -17,7 +18,7 @@ class GraphQLService {
 
   async queryBridgeProposalCreated() {
 
-    const query = apollo.gql(`query { governorProposalCreateds { proposalId values description proposer } }`)
+    const query = apollo.gql(`query { governorProposalCreateds { proposalId values description proposer to startTimestamp endTimestamp proposer } }`)
 
     /*
     curl -g -X POST \
