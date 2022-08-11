@@ -101,7 +101,6 @@ import Wallet from 'containers/wallet/Wallet'
 import Bridge from 'containers/bridge/Bridge'
 import MonsterWrapper from 'containers/monster/MonsterWrapper'
 import Lock from 'containers/veboba/Lock'
-import Vote from 'containers/vote/Vote'
 
 import { Box, Container } from '@mui/material'
 
@@ -382,9 +381,6 @@ function Home() {
             }
             { pageDisplay === "Lock" &&
               <Lock />
-            }
-            { pageDisplay === "Vote" &&
-              <Vote />
             }
           </Container>
           <PageFooter/>

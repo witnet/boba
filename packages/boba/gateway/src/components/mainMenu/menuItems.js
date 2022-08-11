@@ -44,13 +44,7 @@ export const menuItems = [
   {
     key: 'DAO',
     icon: "DAOIcon",
-    title: "Dao",
+    title: "Vote & Dao",
     url: "/dao"
-  },
-  {
-    key: 'Vote',
-    icon: "VoteIcon",
-    title: "Vote",
-    url: "/vote"
   }
 ]
