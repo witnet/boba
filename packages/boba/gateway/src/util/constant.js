@@ -24,3 +24,6 @@ export const EXPIRY_OPTIONS = [
     label: '1 Year',
   },
 ]
+
+// paginations constants.
+export const PER_PAGE = 8
